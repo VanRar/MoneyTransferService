@@ -1,0 +1,12 @@
+INFO	2021-12-17 19:25:40,006	0	transferLog	[main]	Запрос на перевод1639758339D1024691812 Transaction{cardFrom=Card{cardNumber='1231323123132131', amount=Amount{value=10000, currency='RUR'}}, cardToNumber='5456465465465465', amount=Amount{value=10000, currency='RUR'}}
+INFO	2021-12-17 19:25:40,371	365	transferLog	[main]	Перевод подтверждён ConfirmOperation{operationId='1639758089D-1106446258', code='0000'}
+INFO	2021-12-17 19:25:40,376	370	transferLog	[main]	Перевод подтверждён ConfirmOperation{operationId='1639758089D-1106446258', code='0000'}
+INFO	2021-12-17 19:26:03,907	0	transferLog	[main]	Запрос на перевод1639758363D1024691812 Transaction{cardFrom=Card{cardNumber='1231323123132131', amount=Amount{value=10000, currency='RUR'}}, cardToNumber='5456465465465465', amount=Amount{value=10000, currency='RUR'}}
+INFO	2021-12-17 19:26:04,235	328	transferLog	[main]	Перевод подтверждён ConfirmOperation{operationId='1639758089D-1106446258', code='0001'}
+INFO	2021-12-17 19:26:04,240	333	transferLog	[main]	Перевод подтверждён ConfirmOperation{operationId='1639758089D-1106446258', code='0001'}
+INFO	2021-12-17 19:26:13,811	0	transferLog	[main]	Запрос на перевод1639758373D1024691812 Transaction{cardFrom=Card{cardNumber='1231323123132131', amount=Amount{value=10000, currency='RUR'}}, cardToNumber='5456465465465465', amount=Amount{value=10000, currency='RUR'}}
+INFO	2021-12-17 19:26:14,135	324	transferLog	[main]	Перевод подтверждён ConfirmOperation{operationId='1639758089D-1106446258', code='1234'}
+INFO	2021-12-17 19:26:14,142	331	transferLog	[main]	Перевод подтверждён ConfirmOperation{operationId='1639758089D-1106446258', code='1234'}
+INFO	2021-12-17 19:46:07,844	0	transferLog	[http-nio-5500-exec-1]	Запрос на перевод1639759567D-1401684058 Transaction{cardFrom=Card{cardNumber='1231323123132131', amount=Amount{value=100, currency='RUR'}}, cardToNumber='5456465465465465', amount=Amount{value=100, currency='RUR'}}
+INFO	2021-12-17 19:50:10,675	0	transferLog	[main]	������� ���������� ConfirmOperation{operationId='1639758089D-1106446258', code='1234'}
+INFO	2021-12-17 19:50:10,677	2	transferLog	[main]	������� ���������� ConfirmOperation{operationId='1639758089D-1106446258', code='1234'}
