@@ -6,6 +6,7 @@ public class Transaction {
     private final Card cardFrom;
     private String cardToNumber;
     private Amount amount;
+    private Operation operation;
 
     //создаем из запроса
     public Transaction(String cardFromNumber,
@@ -30,13 +31,12 @@ public class Transaction {
         return amount;
     }
 
-    @Override
-    public String toString() {
-        return "Transaction{" +
-                "cardFrom=" + cardFrom +
-                ", cardToNumber='" + cardToNumber + '\'' +
-                ", amount=" + amount +
-                '}';
+    public Operation getOperation() {
+        return operation;
+    }
+
+    public void setOperation(Operation operation) {
+        this.operation = operation;
     }
 
     @Override
@@ -50,6 +50,15 @@ public class Transaction {
     @Override
     public int hashCode() {
         return Objects.hash(cardFrom, cardToNumber, amount);
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "cardFrom=" + cardFrom +
+                ", cardToNumber='" + cardToNumber + '\'' +
+                ", amount=" + amount +
+                '}';
     }
 }
 //{"cardFromNumber": "1231323123132131",

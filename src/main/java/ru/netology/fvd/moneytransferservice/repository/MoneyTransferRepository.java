@@ -9,14 +9,15 @@ import ru.netology.fvd.moneytransferservice.model.Verification;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 //работа с данными
 @Repository
 public class MoneyTransferRepository {
     //храним наши транзакции в мапе
-    private final Map<String, Transaction> transactions = new HashMap<>();
+    private final Map<String, Transaction> transactions = new ConcurrentHashMap<>();
     //сохраняем логи
-    private static final Logger logger = LogManager.getLogger("transferLog");
+    private static final Logger logger = LogManager.getLogger(MoneyTransferRepository.class);
 
     public String saveTransaction(Transaction transaction){
         long unixTime = System.currentTimeMillis() / 1000L;
@@ -26,7 +27,7 @@ public class MoneyTransferRepository {
                 .append("D")
                 .append(transaction.hashCode());//создаем уникальный номер
         transactions.put(stringBuilder.toString(), transaction);//сохраняем транзакцию
-        logger.info("Запрос на перевод" + stringBuilder.toString() + " " + transaction);
+        logger.info("Запрос на перевод " + stringBuilder.toString() + " " + transaction);
         return stringBuilder.toString();//возвращаем уникальный номер транзакции
     }
 

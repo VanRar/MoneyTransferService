@@ -16,8 +16,13 @@ public class MoneyTransferService {
     public MoneyTransferService(MoneyTransferRepository moneyTransferRepository){
         this.moneyTransferRepository = moneyTransferRepository;
     }
-    //TODO написать методы по переводу
+
     public Operation transfer(Transaction transaction){
+        //где будет валидироваться карта и перевод
+        System.out.println(transaction);
+
+
+        // и фиксироваться факт проведения транзакции(деньги пока не переводятся).
         return new Operation(moneyTransferRepository.saveTransaction(transaction));
     }
 
